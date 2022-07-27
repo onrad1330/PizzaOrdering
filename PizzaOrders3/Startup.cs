@@ -30,6 +30,7 @@ namespace PizzaOrders3
 			services.AddDbContext<PizzaOrdersContext>(options =>
 				options.UseSqlServer(
 					Configuration.GetConnectionString("DefaultConnection")));
+
 			services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 				.AddEntityFrameworkStores<PizzaOrdersContext>();
 			services.AddControllersWithViews();
@@ -46,6 +47,8 @@ namespace PizzaOrders3
 			}
 			else
 			{
+				app.UseMiddleware<ErrorLoggingMiddleware>();
+
 				app.UseExceptionHandler("/Home/Error");
 				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 				app.UseHsts();
