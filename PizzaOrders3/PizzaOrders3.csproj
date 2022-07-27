@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-PizzaOrders3-733F6753-565A-4944-9C0D-D7AC89B1B3FB</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210826144029_ReservationName.cs" />
+    <Compile Remove="Migrations\20210826144029_ReservationName.Designer.cs" />
+    <Compile Remove="Migrations\20210826144135_ReservationName2.cs" />
+    <Compile Remove="Migrations\20210826144135_ReservationName2.Designer.cs" />
+    <Compile Remove="Migrations\20210826144331_Reservation.cs" />
+    <Compile Remove="Migrations\20210826144331_Reservation.Designer.cs" />
+    <Compile Remove="Migrations\20210826144439_Reservation.cs" />
+    <Compile Remove="Migrations\20210826144439_Reservation.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.18" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10" />
+  </ItemGroup>
+
+</Project>

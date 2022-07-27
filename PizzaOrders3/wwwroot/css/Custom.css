@@ -1,0 +1,49 @@
+﻿/* Extra small devices (phones, 600px and down) */
+
+
+
+.sw-theme-default {
+	border: none !important;
+}
+
+
+.visible {
+	visibility: visible !important;
+}
+
+
+
+.toolbar-bottom {
+	text-align: center !important;
+}
+
+
+.footer {
+	visibility: hidden;
+}
+
+.sw-theme-default .toolbar > .btn {
+	margin: 0 0.5em 0 0.5em;
+	width: 125px;
+}
+
+.sw-theme-default > .tab-content > .tab-pane {
+	padding: 1em;
+}
+
+.form-group {
+	margin-bottom: 0.7rem;
+}
+
+.mainView {
+	padding: 1em;
+	margin: auto;
+	width: 50%;
+}
+@media only screen and (max-width: 682px) {
+	.mainView {
+		padding: 0.8em;
+		margin: auto;
+		width: 100%;
+	}
+}
